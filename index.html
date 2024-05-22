@@ -15,12 +15,11 @@
 </head>
 
 <body>
-  <input type"file"
-  class="inputFile"
-  id="fileInp"
-  onchange="getFile(event)"
-  accept="image/png , image/jpg, image/jpeg">
-  <label for="fileInp">+</label>
+  <input type="file" accept="image/jpeg, image/png, image/jpg" class="inputFile" onchange="getFile(event)" >
+  </input>
+  
+  
+  
   <span class="fileText"></span>
   <button onclick="uploadImage()">Upload Image</button>
   <div class="bar">
@@ -31,7 +30,9 @@
     <img class="img" alt="">
   </div>
   
+  
   <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase.js"></script>
+  
   <script src="main.js"></script>
 </body>
 </html>
