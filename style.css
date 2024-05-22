@@ -35,7 +35,7 @@ button{
 }
 .bar{
   height: 25px;
-  width: 200px;
+  width: 300px;
   background: darkgrey;
 }
 .progress{
@@ -48,7 +48,7 @@ button{
 }
 
 .img{
-  width: 300px;
+  width: 200px;
   
   object-fit: cover;
   display: none;
