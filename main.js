@@ -39,7 +39,7 @@ function uploadImage() {
     console.log(parcentVal);
     
     uploadParcentage.innerHTML = parcentVal+"%";
-    progress.style.width="200px";
+    progress.style.width="100%";
     
   },(error)=>{
     console.log("Error is", error);
@@ -47,7 +47,7 @@ function uploadImage() {
     
     uploadTask.snapshot.ref.getDownloadURL().then((url)=>{
       console.log("URL", url);
-      
+      alert("Upload Successfull !");
       if (url!= "") {
         img.setAttribute("src", url);
         img.style.display="block";
