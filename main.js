@@ -21,7 +21,7 @@ var fileName;
 var fileItem;
 var img = document.querySelector(".img")
 
-function getFile(e) {
+function getFile(e){
   fileItem = e.target.files[0];
   fileName = fileItem.name;
   fileText.innerHTML = fileName;
@@ -39,7 +39,8 @@ function uploadImage() {
     console.log(parcentVal);
     
     uploadParcentage.innerHTML = parcentVal+"%";
-    progress.style.width = parcentVal+"%";
+    progress.style.width="200px";
+    
   },(error)=>{
     console.log("Error is", error);
   },()=>{
@@ -51,6 +52,7 @@ function uploadImage() {
         img.setAttribute("src", url);
         img.style.display="block";
       }
+      
     })
     
   })
