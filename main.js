@@ -39,7 +39,7 @@ function uploadImage() {
     console.log(parcentVal);
     
     uploadParcentage.innerHTML = parcentVal+"%";
-    progress.style.width="100%";
+    progress.style.width= parcentVal+"%";
     
   },(error)=>{
     console.log("Error is", error);
