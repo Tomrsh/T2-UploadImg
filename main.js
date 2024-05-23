@@ -47,7 +47,7 @@ function uploadImage() {
     
     uploadTask.snapshot.ref.getDownloadURL().then((url)=>{
       console.log("URL", url);
-      alert("Upload Successfull !");
+      alert("Upload Successfull ! Your Image after 24 hours show from the T2-GALLERY");
       if (url!= "") {
         img.setAttribute("src", url);
         img.style.display="block";
